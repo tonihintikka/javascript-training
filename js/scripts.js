@@ -10,3 +10,7 @@ console.log(myValue);
 console.log(document);
 console.dir(document);
 console.log(document.lastModified);
+
+if (typeof myNum == "number") {
+  console.log("tessss");
+}
