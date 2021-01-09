@@ -1,0 +1,17 @@
+{
+  "name": "javascriptlearning",
+  "version": "1.0.0",
+  "description": "Learning udemy course",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "server": "live-server"
+  },
+  "author": "Toni Hintikka",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.1.0",
+    "live-server": "^1.2.1"
+  }
+}
