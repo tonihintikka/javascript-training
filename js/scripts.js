@@ -11,7 +11,7 @@ let a = 21;
 //console.dir(document);
 //console.log(document.lastModified);
 
-let myTestArray = ["Hello", "World", "branket", "banana"];
+/*let myTestArray = ["Hello", "World", "branket", "banana"];
 myTestArray.push("at the end");
 console.log(myTestArray[0] + " " + myTestArray[1]);
 console.log(myTestArray);
@@ -39,7 +39,7 @@ console.log(rep);*/
 //delete myArray[3];
 /*let lastone = myArray.pop();
 console.log(lastone);*/
-console.log(myArray);
+//console.log(myArray);
 /*
 if (a) {
   console.log(a);
@@ -51,6 +51,14 @@ if (a) {
 if (typeof myNum == "number") {
   console.log("tessss");
 }*/
+
+/* Java Script constructor methods */
+let myArray2 = [3, 5, 2, "hello", "ni"];
+let [a, b, c, d, e] = myArray2;
+a++;
+b++;
+console.log("constructor");
+console.log(a, b, c, d, e);
 
 let myObject = { first: "Toni", Last: "Hintikka" };
 console.log(myObject.first);
