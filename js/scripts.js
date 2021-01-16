@@ -1,64 +1,41 @@
-/*var myValue = "Hello gello";
-var myNum = 20;
-myNum = myNum + 77;
-console.log(myNum);
-let a = 21;
-//let result = prompt("Mikä sun nimes on?", "None");*/
-
-//console.log(result);
-//console.log(myValue);
-//console.log(document);
-//console.dir(document);
-//console.log(document.lastModified);
-
-/*let myTestArray = ["Hello", "World", "branket", "banana"];
-myTestArray.push("at the end");
-console.log(myTestArray[0] + " " + myTestArray[1]);
-console.log(myTestArray);
-
-let myArray = ["Hello", "World", 50, false];
-console.log(myArray[0] + " " + myArray[1]);
-myArray[myArray.length] = "New item";
-myArray.push("At the end");
-let firstone = myArray.shift();
-console.log(firstone);
-myArray.unshift("New one at the start");
-console.log("slice");
-let res = myArray.slice(3);
-myArray[3] = true;
-console.log(res);
-let myStr = myArray.toString();
-let myArray2 = myStr.split(",");
-let myArray3 = myArray.join(" - ");
-console.log(myStr);
-console.log(myArray2);
-console.log(myArray3);
-/*
-let rep = myArray.splice(3,2,"One","Two");
-console.log(rep);*/
-//delete myArray[3];
-/*let lastone = myArray.pop();
-console.log(lastone);*/
-//console.log(myArray);
-/*
-if (a) {
-  console.log(a);
-  let d = "anything";
-  console.log(d);
-  console.log(typeof a);
+let num = 10;
+testOne(4); //11
+testOne("New"); //12
+let a = testTwo(num);
+//console.log(a);
+let b = "Hello";
+testThree(b);
+/*console.log(test4(5));
+console.log(test4(5,8));*/
+console.log(test5(5));
+console.log(test5(5, 8));
+function test5(x, y) {
+  //y =  (typeof y !== 'undefined') ? y : 10;
+  y = y || 20;
+  console.log(x);
+  console.log(y);
+  return x * y;
 }
-
-if (typeof myNum == "number") {
-  console.log("tessss");
-}*/
-
-/* Java Script constructor methods */
-let myArray2 = [3, 5, 2, "hello", "ni"];
-let [a, b, c, d, e] = myArray2;
-a++;
-b++;
-console.log("constructor");
-console.log(a, b, c, d, e);
+function test4(x, y = 10) {
+  console.log(x);
+  console.log(y);
+  return x * y;
+}
+function testThree(str) {
+  let b = "New";
+  //console.log(b + " World");
+}
+function testTwo(arg) {
+  arg++;
+  return arg * arg;
+}
+function testOne(val) {
+  //console.log(val);
+  let hello = val + " Hello World ";
+  num++;
+  //console.log(hello + num);
+  return hello;
+}
 
 let myObject = { first: "Toni", Last: "Hintikka" };
 console.log(myObject.first);
@@ -75,3 +52,16 @@ myFooter = document.createElement("footer");
 myFooterText = document.createTextNode(document.lastModified);
 myFooter.appendChild(myFooterText);
 document.body.appendChild(myFooter);
+
+let myFun3 = x => x * 10;
+console.log(myFun3(3));
+
+let messages = {
+  welcome: ["testi yksi", "testi kaksi"],
+  hello: function() {
+    console.log("Hello how are you?");
+  },
+  goodbye: function() {
+    console.log("Thaks for coming Bye now");
+  }
+};
