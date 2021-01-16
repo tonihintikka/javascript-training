@@ -1,9 +1,9 @@
-var myValue = "Hello gello";
+/*var myValue = "Hello gello";
 var myNum = 20;
 myNum = myNum + 77;
 console.log(myNum);
 let a = 21;
-//let result = prompt("Mikä sun nimes on?", "None");
+//let result = prompt("Mikä sun nimes on?", "None");*/
 
 //console.log(result);
 //console.log(myValue);
@@ -16,6 +16,31 @@ myTestArray.push("at the end");
 console.log(myTestArray[0] + " " + myTestArray[1]);
 console.log(myTestArray);
 
+let myArray = ["Hello", "World", 50, false];
+console.log(myArray[0] + " " + myArray[1]);
+myArray[myArray.length] = "New item";
+myArray.push("At the end");
+let firstone = myArray.shift();
+console.log(firstone);
+myArray.unshift("New one at the start");
+console.log("slice");
+let res = myArray.slice(3);
+myArray[3] = true;
+console.log(res);
+let myStr = myArray.toString();
+let myArray2 = myStr.split(",");
+let myArray3 = myArray.join(" - ");
+console.log(myStr);
+console.log(myArray2);
+console.log(myArray3);
+/*
+let rep = myArray.splice(3,2,"One","Two");
+console.log(rep);*/
+//delete myArray[3];
+/*let lastone = myArray.pop();
+console.log(lastone);*/
+console.log(myArray);
+/*
 if (a) {
   console.log(a);
   let d = "anything";
@@ -25,7 +50,7 @@ if (a) {
 
 if (typeof myNum == "number") {
   console.log("tessss");
-}
+}*/
 
 let myObject = { first: "Toni", Last: "Hintikka" };
 console.log(myObject.first);
