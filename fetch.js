@@ -7,12 +7,9 @@ function myJSON(){
   fetch (url).then(function(response){
       return response.json();
   }).then(function(data){
-    let html =''
     data.results.forEach(function(person){
       console.log(person)
-      html += '<div>'+person.email+'</div>'
     })
-    output.innerHTML = html
 
 
 
@@ -22,4 +19,3 @@ function myJSON(){
     console.log(e);
   })
 }
-
